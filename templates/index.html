@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<title>TOOLKIT</title>
+	<link href="../static/estilo.css" rel="stylesheet" type="text/css">
+	<meta charset = "UTF-8"> 
+	<!--<meta http-equiv="refresh" content="1;URL=./"> -->
+
+	
+</head>
+<body>
+
+
+	
+	<div class="container">
+  <div class="item1"> 
+	  
+	  <h4 class="hora"> {{timestr}} </h4>
+	  <img class="titulo" src="https://www.sie-engineering.it/personale/system/images/logo.png" height="100%" width="40%"/>
+	  <h4 class="fecha"> {{datestr}} </h4>
+	  
+	  
+	  
+	   </div>
+
+  <div class="item3">
+    <div class="itemOne">	
+		<h3 style = "font-size:1em; justify-self:center;"> SCHEDA: </h3>
+		<h3 style="font-size:1em; justufy-self:center; align-self:center;"> ALIMENTATORE 1: </h3>
+		<h3 style="font-size:1em; justufy-self:center; align-self:center;"> ALIMENTATORE 2:</h3>
+		<h3 style="font-size:1em; justufy-self:center; align-self:center;"> ALIMENTATORE 3: </h3>
+		<h3 style="font-size:1em; justufy-self:center; align-self:center;"> ALIMENTATORE 4: </h3>
+		<h3 style="font-size:1em; justufy-self:center; align-self:center;"> ALIMENTATORE 5: </h3>
+		<h3 style="font-size:1em; justufy-self:center; align-self:center;"> ALIMENTATORE 6: </h3>
+		<h3 style="font-size:1em; justufy-self:center; align-self:center;"> ALIMENTATORE 7: </h3>
+		<h3 style="font-size:1em; justufy-self:center; align-self:center;"> ALIMENTATORE 8: </h3>
+		<h3 style="font-size:1em; justufy-self:center; align-self:center;"> ALIMENTATORE 9: </h3>
+		<h3 style="font-size:1em; justufy-self:center; align-self:center;"> ALIMENTATORE 10: </h3>
+		<h3 style="font-size:1em; justufy-self:center; align-self:center;"> ALIMENTATORE 11: </h3>
+		<h3 style="font-size:1em; justufy-self:center; align-self:center;"> ALIMENTATORE 12: </h3>
+	
+		
+
+	</div>  
+	<div class="itemTwo"> 
+	
+	<h3 class="t1" style="font-size:1em;"> 5 V_A </h3>
+	<h3 class="t2" style="font-size:1em;"> 12 V_A </h3>
+	<h3 class="t3" style="font-size:1em;"> 5 V_B </h3>
+	<h3 class="t4" style="font-size:1em;"> 12 V_B </h3>
+	<h3 class="t5" style="font-size:1em;"> 5 V_C </h3>
+	<h3 class="t6" style="font-size:1em;"> 12 V_C </h3>
+	<h3 class="t7" style="font-size:1em;"> 5 V_D </h3>
+	<h3 class="t8" style="font-size:1em;"> 12 V_D </h3>
+	<h3 class="t9" style="font-size:1em;"> 24 V_M </h3>
+	<h3 class="t10" style="font-size:1em;"> 24 V_AUX </h3>
+	{% if P5V_A1 == 1 %}
+	<h3 style = "color:green;"class="t1">{{P5V_A1}}</h3>
+	{% else %}
+	<h3 style = "color:red;"class="t1">{{P5V_A1}}</h3>
+	{% endif %}
+	{% if P12V_A1 == 1 %}
+	<h3 style="color:green;"class="t2">{{P12V_A1}}</h3>
+	{% else %}
+	<h3 style="color:red;"class="t2">{{P12V_A1}}</h3>
+	{% endif %}
+	{%if P5V_B1 == 1 %}
+	<h3 class="t3" style="color:green;">{{P5V_B1}}</h3>
+	{% else %}
+	<h3 class="t3" style="color:red;">{{P5V_B1}}</h3>
+	{% endif %}
+	{% if P12V_B1 == 1 %}
+	<h3 class="t4" style="color:green;">{{P12V_B1}}</h3>
+	{% else %}
+	<h3 class="t4" style="color:red;">{{P12V_B1}}</h3>
+	{% endif %}
+	{% if P5V_C1 == 1 %}
+	<h3 class="t5" style="color:green;">{{P5V_C1}}</h3>
+	{% else %}
+	<h3 class="t5" style="color:red;">{{P5V_C1}}</h3>
+	{% endif %}
+	{% if P12V_C1 == 1 %}
+	<h3 class="t6" style="color:green;">{{P12V_C1}}</h3>
+	{% else %}
+	<h3 class="t6" style="color:red;">{{P12V_C1}}</h3>
+	{% endif %}
+	{% if P5V_D1 == 1 %}
+	<h3 class="t7" style="color:green;">{{P5V_D1}}</h3>
+	{% else %}
+	<h3 class="t7" style="color:red;">{{P5V_D1}}</h3>
+	{% endif %}
+	{% if P12V_D1 == 1 %}
+	<h3 class="t8" style="color:green;">{{P12V_D1}}</h3>
+	{% else %}
+	<h3 class="t8" style="color:red;">{{P12V_D1}}</h3>
+	{% endif %}
+	{% if P24V_M1 == 1 %}
+	<h3 class="t9" style="color:green;">{{P24V_M1}}</h3>
+	{% else %}
+	<h3 class="t9" style="color:red;">{{P24V_M1}}</h3>
+	{% endif %}
+	{% if P24V_AUS1 == 1 %}
+	<h3 class="t10" style = "color:green;">{{P24V_AUS1}}</h3>
+	{% else %}
+	<h3 class="t10" style = "color:red;">{{P24V_AUS1}}</h3>
+	{% endif %}
+	{% if P5V_A2 == 1 %}
+	<h3 style = "color:green;"class="t1">{{P5V_A2}}</h3>
+	{% else %}
+	<h3 style = "color:red;"class="t1">{{P5V_A2}}</h3>
+	{% endif %}
+	{% if P12V_A2 == 1 %}
+	<h3 style="color:green;"class="t2">{{P12V_A2}}</h3>
+	{% else %}
+	<h3 style="color:red;"class="t2">{{P12V_A2}}</h3>
+	{% endif %}
+	{%if P5V_B2 == 1 %}
+	<h3 class="t3" style="color:green;">{{P5V_B2}}</h3>
+	{% else %}
+	<h3 class="t3" style="color:red;">{{P5V_B2}}</h3>
+	{% endif %}
+	{% if P12V_B2 == 1 %}
+	<h3 class="t4" style="color:green;">{{P12V_B2}}</h3>
+	{% else %}
+	<h3 class="t4" style="color:red;">{{P12V_B2}}</h3>
+	{% endif %}
+	{% if P5V_C2 == 1 %}
+	<h3 class="t5" style="color:green;">{{P5V_C2}}</h3>
+	{% else %}
+	<h3 class="t5" style="color:red;">{{P5V_C2}}</h3>
+	{% endif %}
+	{% if P12V_C2 == 1 %}
+	<h3 class="t6" style="color:green;">{{P12V_C2}}</h3>
+	{% else %}
+	<h3 class="t6" style="color:red;">{{P12V_C2}}</h3>
+	{% endif %}
+	{% if P5V_D2 == 1 %}
+	<h3 class="t7" style="color:green;">{{P5V_D2}}</h3>
+	{% else %}
+	<h3 class="t7" style="color:red;">{{P5V_D2}}</h3>
+	{% endif %}
+	{% if P12V_D2 == 1 %}
+	<h3 class="t8" style="color:green;">{{P12V_D2}}</h3>
+	{% else %}
+	<h3 class="t8" style="color:red;">{{P12V_D2}}</h3>
+	{% endif %}
+	{% if P24V_M2 == 1 %}
+	<h3 class="t9" style="color:green;">{{P24V_M2}}</h3>
+	{% else %}
+	<h3 class="t9" style="color:red;">{{P24V_M2}}</h3>
+	{% endif %}
+	{% if P24V_AUS2 == 1 %}
+	<h3 class="t10" style = "color:green;">{{P24V_AUS2}}</h3>
+	{% else %}
+	<h3 class="t10" style = "color:red;">{{P24V_AUS2}}</h3>
+	{% endif %}
+	{% if P5V_A3 == 1 %}
+	<h3 style = "color:green;"class="t1">{{P5V_A3}}</h3>
+	{% else %}
+	<h3 style = "color:red;"class="t1">{{P5V_A3}}</h3>
+	{% endif %}
+	{% if P12V_A3 == 1 %}
+	<h3 style="color:green;"class="t2">{{P12V_A3}}</h3>
+	{% else %}
+	<h3 style="color:red;"class="t2">{{P12V_A3}}</h3>
+	{% endif %}
+	{%if P5V_B3 == 1 %}
+	<h3 class="t3" style="color:green;">{{P5V_B3}}</h3>
+	{% else %}
+	<h3 class="t3" style="color:red;">{{P5V_B3}}</h3>
+	{% endif %}
+	{% if P12V_B3 == 1 %}
+	<h3 class="t4" style="color:green;">{{P12V_B3}}</h3>
+	{% else %}
+	<h3 class="t4" style="color:red;">{{P12V_B3}}</h3>
+	{% endif %}
+	{% if P5V_C3 == 1 %}
+	<h3 class="t5" style="color:green;">{{P5V_C3}}</h3>
+	{% else %}
+	<h3 class="t5" style="color:red;">{{P5V_C3}}</h3>
+	{% endif %}
+	{% if P12V_C3 == 1 %}
+	<h3 class="t6" style="color:green;">{{P12V_C3}}</h3>
+	{% else %}
+	<h3 class="t6" style="color:red;">{{P12V_C3}}</h3>
+	{% endif %}
+	{% if P5V_D3 == 1 %}
+	<h3 class="t7" style="color:green;">{{P5V_D3}}</h3>
+	{% else %}
+	<h3 class="t7" style="color:red;">{{P5V_D3}}</h3>
+	{% endif %}
+	{% if P12V_D3 == 1 %}
+	<h3 class="t8" style="color:green;">{{P12V_D3}}</h3>
+	{% else %}
+	<h3 class="t8" style="color:red;">{{P12V_D3}}</h3>
+	{% endif %}
+	{% if P24V_M3 == 1 %}
+	<h3 class="t9" style="color:green;">{{P24V_M3}}</h3>
+	{% else %}
+	<h3 class="t9" style="color:red;">{{P24V_M3}}</h3>
+	{% endif %}
+	{% if P24V_AUS3 == 1 %}
+	<h3 class="t10" style = "color:green;">{{P24V_AUS3}}</h3>
+	{% else %}
+	<h3 class="t10" style = "color:red;">{{P24V_AUS3}}</h3>
+	{% endif %}
+	{% if P5V_A4 == 1 %}
+	<h3 style = "color:green;"class="t1">{{P5V_A4}}</h3>
+	{% else %}
+	<h3 style = "color:red;"class="t1">{{P5V_A4}}</h3>
+	{% endif %}
+	{% if P12V_A4 == 1 %}
+	<h3 style="color:green;"class="t2">{{P12V_A4}}</h3>
+	{% else %}
+	<h3 style="color:red;"class="t2">{{P12V_A4}}</h3>
+	{% endif %}
+	{%if P5V_B4 == 1 %}
+	<h3 class="t3" style="color:green;">{{P5V_B4}}</h3>
+	{% else %}
+	<h3 class="t3" style="color:red;">{{P5V_B4}}</h3>
+	{% endif %}
+	{% if P12V_B4 == 1 %}
+	<h3 class="t4" style="color:green;">{{P12V_B4}}</h3>
+	{% else %}
+	<h3 class="t4" style="color:red;">{{P12V_B4}}</h3>
+	{% endif %}
+	{% if P5V_C4 == 1 %}
+	<h3 class="t5" style="color:green;">{{P5V_C4}}</h3>
+	{% else %}
+	<h3 class="t5" style="color:red;">{{P5V_C4}}</h3>
+	{% endif %}
+	{% if P12V_C4 == 1 %}
+	<h3 class="t6" style="color:green;">{{P12V_C4}}</h3>
+	{% else %}
+	<h3 class="t6" style="color:red;">{{P12V_C4}}</h3>
+	{% endif %}
+	{% if P5V_D4 == 1 %}
+	<h3 class="t7" style="color:green;">{{P5V_D4}}</h3>
+	{% else %}
+	<h3 class="t7" style="color:red;">{{P5V_D4}}</h3>
+	{% endif %}
+	{% if P12V_D4 == 1 %}
+	<h3 class="t8" style="color:green;">{{P12V_D4}}</h3>
+	{% else %}
+	<h3 class="t8" style="color:red;">{{P12V_D4}}</h3>
+	{% endif %}
+	{% if P24V_M4 == 1 %}
+	<h3 class="t9" style="color:green;">{{P24V_M4}}</h3>
+	{% else %}
+	<h3 class="t9" style="color:red;">{{P24V_M4}}</h3>
+	{% endif %}
+	{% if P24V_AUS4 == 1 %}
+	<h3 class="t10" style = "color:green;">{{P24V_AUS4}}</h3>
+	{% else %}
+	<h3 class="t10" style = "color:red;"> {{P24V_AUS4}} </h3>
+	{% endif %}
+	{% if P5V_A5 == 1 %}
+	<h3 style = "color:green;"class="t1">{{P5V_A5}}</h3>
+	{% else %}
+	<h3 style = "color:red;"class="t1">{{P5V_A5}}</h3>
+	{% endif %}
+	{% if P12V_A5 == 1 %}
+	<h3 style="color:green;"class="t2">{{P12V_A5}}</h3>
+	{% else %}
+	<h3 style="color:red;"class="t2">{{P12V_A5}}</h3>
+	{% endif %}
+	{%if P5V_B5 == 1 %}
+	<h3 class="t3" style="color:green;">{{P5V_B5}}</h3>
+	{% else %}
+	<h3 class="t3" style="color:red;">{{P5V_B5}}</h3>
+	{% endif %}
+	{% if P12V_B5 == 1 %}
+	<h3 class="t4" style="color:green;">{{P12V_B5}}</h3>
+	{% else %}
+	<h3 class="t4" style="color:red;">{{P12V_B5}}</h3>
+	{% endif %}
+	{% if P5V_C5 == 1 %}
+	<h3 class="t5" style="color:green;">{{P5V_C5}}</h3>
+	{% else %}
+	<h3 class="t5" style="color:red;">{{P5V_C5}}</h3>
+	{% endif %}
+	{% if P12V_C5 == 1 %}
+	<h3 class="t6" style="color:green;">{{P12V_C5}}</h3>
+	{% else %}
+	<h3 class="t6" style="color:red;">{{P12V_C5}}</h3>
+	{% endif %}
+	{% if P5V_D5 == 1 %}
+	<h3 class="t7" style="color:green;">{{P5V_D5}}</h3>
+	{% else %}
+	<h3 class="t7" style="color:red;">{{P5V_D5}}</h3>
+	{% endif %}
+	{% if P12V_D5 == 1 %}
+	<h3 class="t8" style="color:green;">{{P12V_D5}}</h3>
+	{% else %}
+	<h3 class="t8" style="color:red;">{{P12V_D5}}</h3>
+	{% endif %}
+	{% if P24V_M5 == 1 %}
+	<h3 class="t9" style="color:green;">{{P24V_M5}}</h3>
+	{% else %}
+	<h3 class="t9" style="color:red;">{{P24V_M5}}</h3>
+	{% endif %}
+	{% if P24V_AUS5 == 1 %}
+	<h3 class="t10" style = "color:green;">{{P24V_AUS5}}</h3>
+	{% else %}
+	<h3 class="t10" style = "color:red;">{{P24V_AUS5}}</h3>
+	{% endif %}
+	{% if P5V_A6 == 1 %}
+	<h3 style = "color:green;"class="t1">{{P5V_A6}}</h3>
+	{% else %}
+	<h3 style = "color:red;"class="t1">{{P5V_A6}}</h3>
+	{% endif %}
+	{% if P12V_A6 == 1 %}
+	<h3 style="color:green;"class="t2">{{P12V_A6}}</h3>
+	{% else %}
+	<h3 style="color:red;"class="t2">{{P12V_A6}}</h3>
+	{% endif %}
+	{%if P5V_B6 == 1 %}
+	<h3 class="t3" style="color:green;">{{P5V_B6}}</h3>
+	{% else %}
+	<h3 class="t3" style="color:red;">{{P5V_B6}}</h3>
+	{% endif %}
+	{% if P12V_B6 == 1 %}
+	<h3 class="t4" style="color:green;">{{P12V_B6}}</h3>
+	{% else %}
+	<h3 class="t4" style="color:red;">{{P12V_B6}}</h3>
+	{% endif %}
+	{% if P5V_C6 == 1 %}
+	<h3 class="t5" style="color:green;">{{P5V_C6}}</h3>
+	{% else %}
+	<h3 class="t5" style="color:red;">{{P5V_C6}}</h3>
+	{% endif %}
+	{% if P12V_C6 == 1 %}
+	<h3 class="t6" style="color:green;">{{P12V_C6}}</h3>
+	{% else %}
+	<h3 class="t6" style="color:red;">{{P12V_C6}}</h3>
+	{% endif %}
+	{% if P5V_D6 == 1 %}
+	<h3 class="t7" style="color:green;">{{P5V_D6}}</h3>
+	{% else %}
+	<h3 class="t7" style="color:red;">{{P5V_D6}}</h3>
+	{% endif %}
+	{% if P12V_D6 == 1 %}
+	<h3 class="t8" style="color:green;">{{P12V_D6}}</h3>
+	{% else %}
+	<h3 class="t8" style="color:red;">{{P12V_D6}}</h3>
+	{% endif %}
+	{% if P24V_M6 == 1 %}
+	<h3 class="t9" style="color:green;">{{P24V_M6}}</h3>
+	{% else %}
+	<h3 class="t9" style="color:red;">{{P24V_M6}}</h3>
+	{% endif %}
+	{% if P24V_AUS6 == 1 %}
+	<h3 class="t10" style = "color:green;">{{P24V_AUS6}}</h3>
+	{% else %}
+	<h3 class="t10" style = "color:red;">{{P24V_AUS6}}</h3>
+	{% endif %}
+
+		{% if P5V_A7 == 1 %}
+	<h3 style = "color:green;"class="t1">{{P5V_A7}}</h3>
+	{% else %}
+	<h3 style = "color:red;"class="t1">{{P5V_A7}}</h3>
+	{% endif %}
+	{% if P12V_A7 == 1 %}
+	<h3 style="color:green;"class="t2">{{P12V_A7}}</h3>
+	{% else %}
+	<h3 style="color:red;"class="t2">{{P12V_A7}}</h3>
+	{% endif %}
+	{%if P5V_B7 == 1 %}
+	<h3 class="t3" style="color:green;">{{P5V_B7}}</h3>
+	{% else %}
+	<h3 class="t3" style="color:red;">{{P5V_B7}}</h3>
+	{% endif %}
+	{% if P12V_B7 == 1 %}
+	<h3 class="t4" style="color:green;">{{P12V_B7}}</h3>
+	{% else %}
+	<h3 class="t4" style="color:red;"> {{P12V_B7}} </h3>
+	{% endif %}
+	{% if P5V_C7 == 1 %}
+	<h3 class="t5" style="color:green;">{{P5V_C7}}</h3>
+	{% else %}
+	<h3 class="t5" style="color:red;">{{P5V_C7}}</h3>
+	{% endif %}
+	{% if P12V_C7 == 1 %}
+	<h3 class="t6" style="color:green;">{{P12V_C7}}</h3>
+	{% else %}
+	<h3 class="t6" style="color:red;">{{P12V_C7}}</h3>
+	{% endif %}
+	{% if P5V_D7 == 1 %}
+	<h3 class="t7" style="color:green;">{{P5V_D7}}</h3>
+	{% else %}
+	<h3 class="t7" style="color:red;">{{P5V_D7}}</h3>
+	{% endif %}
+	{% if P12V_D7 == 1 %}
+	<h3 class="t8" style="color:green;">{{P12V_D7}}</h3>
+	{% else %}
+	<h3 class="t8" style="color:red;">{{P12V_D7}}</h3>
+	{% endif %}
+	{% if P24V_M7 == 1 %}
+	<h3 class="t9" style="color:green;">{{P24V_M7}}</h3>
+	{% else %}
+	<h3 class="t9" style="color:red;">{{P24V_M7}}</h3>
+	{% endif %}
+	{% if P24V_AUS7 == 1 %}
+	<h3 class="t10" style = "color:green;">{{P24V_AUS7}}</h3>
+	{% else %}
+	<h3 class="t10" style = "color:red;">{{P24V_AUS7}}</h3>
+	{% endif %}
+	{% if P5V_A8 == 1 %}
+	<h3 style = "color:green;"class="t1">{{P5V_A8}}</h3>
+	{% else %}
+	<h3 style = "color:red;"class="t1">{{P5V_A8}}</h3>
+	{% endif %}
+	{% if P12V_A8 == 1 %}
+	<h3 style="color:green;"class="t2">{{P12V_A8}}</h3>
+	{% else %}
+	<h3 style="color:red;"class="t2">{{P12V_A8}}</h3>
+	{% endif %}
+	{%if P5V_B8 == 1 %}
+	<h3 class="t3" style="color:green;">{{P5V_B8}}</h3>
+	{% else %}
+	<h3 class="t3" style="color:red;">{{P5V_B8}}</h3>
+	{% endif %}
+	{% if P12V_B8 == 1 %}
+	<h3 class="t4" style="color:green;">{{P12V_B8}}</h3>
+	{% else %}
+	<h3 class="t4" style="color:red;">{{P12V_B8}}</h3>
+	{% endif %}
+	{% if P5V_C8 == 1 %}
+	<h3 class="t5" style="color:green;">{{P5V_C8}}</h3>
+	{% else %}
+	<h3 class="t5" style="color:red;">{{P5V_C8}}</h3>
+	{% endif %}
+	{% if P12V_C8 == 1 %}
+	<h3 class="t6" style="color:green;">{{P12V_C8}}</h3>
+	{% else %}
+	<h3 class="t6" style="color:red;">{{P12V_C8}}</h3>
+	{% endif %}
+	{% if P5V_D8 == 1 %}
+	<h3 class="t7" style="color:green;">{{P5V_D8}}</h3>
+	{% else %}
+	<h3 class="t7" style="color:red;"> {{P5V_D8}} </h3>
+	{% endif %}
+	{% if P12V_D8 == 1 %}
+	<h3 class="t8" style="color:green;">{{P12V_D8}}</h3>
+	{% else %}
+	<h3 class="t8" style="color:red;">{{P12V_D8}}</h3>
+	{% endif %}
+	{% if P24V_M8 == 1 %}
+	<h3 class="t9" style="color:green;">{{P24V_M8}}</h3>
+	{% else %}
+	<h3 class="t9" style="color:red;">{{P24V_M8}}</h3>
+	{% endif %}
+	{% if P24V_AUS8 == 1 %}
+	<h3 class="t10" style = "color:green;">{{P24V_AUS8}}</h3>
+	{% else %}
+	<h3 class="t10" style = "color:red;">{{P24V_AUS8}}</h3>
+	{% endif %}
+		{% if P5V_A9 == 1 %}
+	<h3 style = "color:green;"class="t1">{{P5V_A9}}</h3>
+	{% else %}
+	<h3 style = "color:red;"class="t1">{{P5V_A9}}</h3>
+	{% endif %}
+	{% if P12V_A9 == 1 %}
+	<h3 style="color:green;"class="t2">{{P12V_A9}}</h3>
+	{% else %}
+	<h3 style="color:red;"class="t2">{{P12V_A9}}</h3>
+	{% endif %}
+	{%if P5V_B9 == 1 %}
+	<h3 class="t3" style="color:green;">{{P5V_B9}}</h3>
+	{% else %}
+	<h3 class="t3" style="color:red;">{{P5V_B9}}</h3>
+	{% endif %}
+	{% if P12V_B9 == 1 %}
+	<h3 class="t4" style="color:green;">{{P12V_B9}}</h3>
+	{% else %}
+	<h3 class="t4" style="color:red;">{{P12V_B9}}</h3>
+	{% endif %}
+	{% if P5V_C9 == 1 %}
+	<h3 class="t5" style="color:green;">{{P5V_C9}}</h3>
+	{% else %}
+	<h3 class="t5" style="color:red;">{{P5V_C9}}</h3>
+	{% endif %}
+	{% if P12V_C9 == 1 %}
+	<h3 class="t6" style="color:green;">{{P12V_C9}}</h3>
+	{% else %}
+	<h3 class="t6" style="color:red;">{{P12V_C9}}</h3>
+	{% endif %}
+	{% if P5V_D9 == 1 %}
+	<h3 class="t7" style="color:green;">{{P5V_D9}}</h3>
+	{% else %}
+	<h3 class="t7" style="color:red;">{{P5V_D9}}</h3>
+	{% endif %}
+	{% if P12V_D9 == 1 %}
+	<h3 class="t8" style="color:green;">{{P12V_D9}}</h3>
+	{% else %}
+	<h3 class="t8" style="color:red;">{{P12V_D9}}</h3>
+	{% endif %}
+	{% if P24V_M9 == 1 %}
+	<h3 class="t9" style="color:green;">{{P24V_M9}}</h3>
+	{% else %}
+	<h3 class="t9" style="color:red;">{{P24V_M9}}</h3>
+	{% endif %}
+	{% if P24V_AUS9 == 1 %}
+	<h3 class="t10" style = "color:green;">{{P24V_AUS9}}</h3>
+	{% else %}
+	<h3 class="t10" style = "color:red;">{{P24V_AUS9}}</h3>
+	{% endif %}
+
+	{% if P5V_A10 == 1 %}
+	<h3 style = "color:green;"class="t1">{{P5V_A10}}</h3>
+	{% else %}
+	<h3 style = "color:red;"class="t1">{{P5V_A10}}</h3>
+	{% endif %}
+	{% if P12V_A10 == 1 %}
+	<h3 style="color:green;"class="t2">{{P12V_A10}}</h3>
+	{% else %}
+	<h3 style="color:red;"class="t2">{{P12V_A10}}</h3>
+	{% endif %}
+	{%if P5V_B10 == 1 %}
+	<h3 class="t3" style="color:green;">{{P5V_B10}}</h3>
+	{% else %}
+	<h3 class="t3" style="color:red;">{{P5V_B10}}</h3>
+	{% endif %}
+	{% if P12V_B10 == 1 %}
+	<h3 class="t4" style="color:green;">{{P12V_B10}}</h3>
+	{% else %}
+	<h3 class="t4" style="color:red;">{{P12V_B10}}</h3>
+	{% endif %}
+	{% if P5V_C10 == 1 %}
+	<h3 class="t5" style="color:green;">{{P5V_C10}}</h3>
+	{% else %}
+	<h3 class="t5" style="color:red;">{{P5V_C10}}</h3>
+	{% endif %}
+	{% if P12V_C10 == 1 %}
+	<h3 class="t6" style="color:green;">{{P12V_C10}}</h3>
+	{% else %}
+	<h3 class="t6" style="color:red;">{{P12V_C10}}</h3>
+	{% endif %}
+	{% if P5V_D10 == 1 %}
+	<h3 class="t7" style="color:green;">{{P5V_D10}}</h3>
+	{% else %}
+	<h3 class="t7" style="color:red;">{{P5V_D10}}</h3>
+	{% endif %}
+	{% if P12V_D10 == 1 %}
+	<h3 class="t8" style="color:green;">{{P12V_D10}}</h3>
+	{% else %}
+	<h3 class="t8" style="color:red;">{{P12V_D10}}</h3>
+	{% endif %}
+	{% if P24V_M10 == 1 %}
+	<h3 class="t9" style="color:green;">{{P24V_M10}}</h3>
+	{% else %}
+	<h3 class="t9" style="color:red;">{{P24V_M10}}</h3>
+	{% endif %}
+	{% if P24V_AUS10 == 1 %}
+	<h3 class="t10" style = "color:green;">{{P24V_AUS10}}</h3>
+	{% else %}
+	<h3 class="t10" style = "color:red;">{{P24V_AUS10}}</h3>
+	{% endif %}
+			{% if P5V_A11 == 1 %}
+	<h3 style = "color:green;"class="t1">{{P5V_A11}}</h3>
+	{% else %}
+	<h3 style = "color:red;"class="t1">{{P5V_A11}}</h3>
+	{% endif %}
+	{% if P12V_A11 == 1 %}
+	<h3 style="color:green;"class="t2">{{P12V_A11}}</h3>
+	{% else %}
+	<h3 style="color:red;"class="t2">{{P12V_A11}}</h3>
+	{% endif %}
+	{%if P5V_B11 == 1 %}
+	<h3 class="t3" style="color:green;">{{P5V_B11}}</h3>
+	{% else %}
+	<h3 class="t3" style="color:red;">{{P5V_B11}}</h3>
+	{% endif %}
+	{% if P12V_B11 == 1 %}
+	<h3 class="t4" style="color:green;">{{P12V_B11}}</h3>
+	{% else %}
+	<h3 class="t4" style="color:red;">{{P12V_B11}}</h3>
+	{% endif %}
+	{% if P5V_C11 == 1 %}
+	<h3 class="t5" style="color:green;">{{P5V_C11}}</h3>
+	{% else %}
+	<h3 class="t5" style="color:red;">{{P5V_C11}}</h3>
+	{% endif %}
+	{% if P12V_C11 == 1 %}
+	<h3 class="t6" style="color:green;">{{P12V_C11}}</h3>
+	{% else %}
+	<h3 class="t6" style="color:red;">{{P12V_C11}}</h3>
+	{% endif %}
+	{% if P5V_D11 == 1 %}
+	<h3 class="t7" style="color:green;">{{P5V_D11}}</h3>
+	{% else %}
+	<h3 class="t7" style="color:red;">{{P5V_D11}}</h3>
+	{% endif %}
+	{% if P12V_D11 == 1 %}
+	<h3 class="t8" style="color:green;">{{P12V_D11}}</h3>
+	{% else %}
+	<h3 class="t8" style="color:red;">{{P12V_D11}}</h3>
+	{% endif %}
+	{% if P24V_M11 == 1 %}
+	<h3 class="t9" style="color:green;">{{P24V_M11}}</h3>
+	{% else %}
+	<h3 class="t9" style="color:red;">{{P24V_M11}}</h3>
+	{% endif %}
+	{% if P24V_AUS11 == 1 %}
+	<h3 class="t10" style = "color:green;">{{P24V_AUS11}}</h3>
+	{% else %}
+	<h3 class="t10" style = "color:red;">{{P24V_AUS11}}</h3>
+	{% endif %}
+			{% if P5V_A12 == 1 %}
+	<h3 style = "color:green;"class="t1">{{P5V_A12}}</h3>
+	{% else %}
+	<h3 style = "color:red;"class="t1">{{P5V_A12}}</h3>
+	{% endif %}
+	{% if P12V_A12 == 1 %}
+	<h3 style="color:green;"class="t2">{{P12V_A12}}</h3>
+	{% else %}
+	<h3 style="color:red;"class="t2">{{P12V_A12}}</h3>
+	{% endif %}
+	{%if P5V_B12 == 1 %}
+	<h3 class="t3" style="color:green;">{{P5V_B12}}</h3>
+	{% else %}
+	<h3 class="t3" style="color:red;">{{P5V_B12}}</h3>
+	{% endif %}
+	{% if P12V_B12 == 1 %}
+	<h3 class="t4" style="color:green;">{{P12V_B12}}</h3>
+	{% else %}
+	<h3 class="t4" style="color:red;">{{P12V_B12}}</h3>
+	{% endif %}
+	{% if P5V_C12 == 1 %}
+	<h3 class="t5" style="color:green;">{{P5V_C12}}</h3>
+	{% else %}
+	<h3 class="t5" style="color:red;">{{P5V_C12}}</h3>
+	{% endif %}
+	{% if P12V_C12 == 1 %}
+	<h3 class="t6" style="color:green;">{{P12V_C12}}</h3>
+	{% else %}
+	<h3 class="t6" style="color:red;">{{P12V_C12}}</h3>
+	{% endif %}
+	{% if P5V_D12 == 1 %}
+	<h3 class="t7" style="color:green;">{{P5V_D12}}</h3>
+	{% else %}
+	<h3 class="t7" style="color:red;">{{P5V_D12}}</h3>
+	{% endif %}
+	{% if P12V_D12 == 1 %}
+	<h3 class="t8" style="color:green;">{{P12V_D12}}</h3>
+	{% else %}
+	<h3 class="t8" style="color:red;">{{P12V_D12}}</h3>
+	{% endif %}
+	{% if P24V_M12 == 1 %}
+	<h3 class="t9" style="color:green;">{{P24V_M12}}</h3>
+	{% else %}
+	<h3 class="t9" style="color:red;">{{P24V_M12}}</h3>
+	{% endif %}
+	{% if P24V_AUS12 == 1 %}
+	<h3 class="t10" style = "color:green;">{{P24V_AUS12}}</h3>
+	{% else %}
+	<h3 class="t10" style = "color:red;">{{P24V_AUS12}}</h3>
+	{% endif %}
+
+		</div>
+  </div>
+  <div class="item4">
+	  
+<button style="height:60px; width:150px; font-size:1em;">
+	 <a href="/impostazioni"> Impostazioni </a> 
+	 </button>
+	 	
+<button style="height:60px; width:150px; font-size:1em;">
+	 <a href="/datalogger"> Data Log </a> 
+	 </button>
+	 	
+<button style="height:60px; width:150px; font-size:1em;">
+	 <a href="/fault"> Fault </a> 
+	 </button>
+	 
+<button style="height:60px; width:150px; font-size:1em;">
+	 <a href="/finalreport"> Report </a> 
+	 </button>
+  </div>
+</div>
+	
+</body>
+</html>

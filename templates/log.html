@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>untitled</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.24.1" />
+</head>
+
+<body style="background-image: url(https://sfondo.info/i/original/9/7/f/16465.jpg);">
+	<img style="margin-top:1%; margin-left:1%;"" src="https://www.sie-engineering.it/personale/system/images/logo.png" height="8%" width="15%"/>
+	<br>
+	<div style="margin-left:1%;">
+		<h3 id = "nome">{{logfile}}</h3>
+	<h4 id="data" style = "display:none;">{% for file in linelog %}{{file}}{% endfor %}
+</h4>
+<h4>{% for file in linelog %}{{file}}<br>{% endfor %}
+</h4>
+	<br>
+	<button style="height:60px; width:150px; font-size:1em;">
+	 <a href="/datalogger"> Previous </a> 
+	 </button>
+	 <button style="height:60px; width:150px; font-size:1em;">
+	 <a href="/{{delete}}"> Delete </a> 
+	 </button>
+	 <button style="height:60px; width:150px; font-size:1em;">
+	 <a id="descargar">Download</a>
+	 </button>
+	 </div>
+	 
+</body>
+<script>
+	
+var namestring = document.getElementById('nome').innerHTML;
+var contenidoDeArchivo = document.getElementById('data').innerHTML;
+var elem = document.getElementById('descargar');
+
+elem.download = namestring+".txt";
+elem.href = "data:application/octet-stream," 
+                     + encodeURIComponent(contenidoDeArchivo);
+</script>
+
+</html>
+

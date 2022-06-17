@@ -1,0 +1,10 @@
+prodotto FDB360 
+
+Test: Run-in 
+Operatore: Federico Sganga
+S/N: 3777_1932G
+
+START TEST: Data: 12-09-2019 Ora: 09:41:43
+END TEST: Data: 12-09-2019 Ora: 16:40:48
+
+Esito: 3777_1932G: OK

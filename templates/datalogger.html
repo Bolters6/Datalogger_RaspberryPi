@@ -1,0 +1,78 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>TOOLKIT</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.24.1" />
+</head>
+
+<body style="background-image: url(https://sfondo.info/i/original/9/7/f/16465.jpg);">
+	<img style="margin-top:1%; margin-left:1%;"" src="https://www.sie-engineering.it/personale/system/images/logo.png" height="8%" width="15%"/>
+	<div style="margin-left:37%;">
+	<h1 style="margin-left:8%;"> DATA LOG </h1>
+	
+	<input style = "height:40px; width:250px;" type="date" onChange="document.links.enlace.href='/'+this.value+'/l';">
+  <button style="height:43px; width:100px;"> <a style = "font-size:20px;" name="enlace" href="">Search</a>
+  </button>
+  <br>
+  <br>
+    <button style="height:60px; width:150px; font-size:1em;">
+	 <a href="/"> Previous </a> 
+	 </button>
+<button style="height:60px; width:150px; font-size:1em;">
+	 <a href="/list/logs/l"> Files List </a> 
+	 </button>
+
+ <!-- <input style = "height:40px; width:250px;" type="text" onChange="document.links.enlace2.href='/'+this.value+'';">
+  <button style="height:43px; width:100px;"> <a style = "font-size:20px;" name="enlace2" href="">Search</a>
+  </button>
+  <br>
+  <br>-->
+
+<button style="height:60px; width:150px; font-size:1em;">
+	 <a href="/list/SerialLogs/s"> Serial List </a> 
+	 </button>
+<br>
+      
+<ol>
+      {% for file in listfilewf %}
+     
+        <li> {{ file }}.txt <button style="height:20px; width:80px;"> <a style = "font-size:15px;" href="/{{fileslist}}/{{file}}/c">Cancella</a>
+  </button>
+  	  <button style="height:20px; width:80px;"> <a style = "font-size:15px;" href="/{{file}}/{{tipo}}">Apri</a>
+  </button>
+  
+  </li>
+       
+      {% endfor %}<br>
+  {% if tipo == 's' %}
+  <button style="height:50px; width:120px; font-size:1em; margin-left:9%;">
+    <a href="/domanda/SerialLogs"> Delete All </a>
+  </button>
+  {% endif %}
+  {% if tipo == 'l' %}
+  <button style="height:50px; width:120px; font-size:1em; margin-left:9%;">
+    <a href="/domanda/logs"> Delete All </a>
+  </button>
+  {% endif %}
+</ol>
+
+<h2>
+{{delete}}
+</h2>
+</div>
+</body>
+
+</html>
+<style>
+	
+input::-webkit-input-placeholder {
+   
+    font-size: 18px;
+    text-align: center;
+}
+
+</style>

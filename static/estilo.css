@@ -1,0 +1,161 @@
+.container {
+    font-size: 1em;
+    width:100%;
+	min-height:800px;
+    background-image: url(https://sfondo.info/i/original/9/7/f/16465.jpg);
+    display: grid;
+	grid-gap: 5px;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas:
+    
+      " header"
+      " content"
+      " footer";
+      
+  }
+  .item1 {
+    align-items: start;
+	font-size: 1em;
+    background: lightgrey;
+    grid-area: header;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	
+	
+  }
+  
+  .hora {
+		align-self:start;
+		justify-self:center;
+		font-size:2em;
+	  grid-column: 1 / 2;
+  }
+   
+  .fecha {
+		align-self:start;
+		justify-self:center;
+		font-size:2em;
+	  grid-column: 3 / 4;
+  }
+   .titulo {
+   
+		
+		justify-self:center;
+		font-size:2em;
+	  grid-column: 2/ 3;
+	  
+  }
+  
+  
+  
+  
+  .item3 {
+  
+    
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 11% 89%;
+    
+    
+  }
+  
+  .item4 {
+	justify-self:center;
+	align-self:center;
+    grid-area: footer;
+  }
+  
+  .itemOne {
+	
+    
+	display:grid;
+	grid-template-rows: 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%;
+  }
+  
+  .itemTwo {
+	font-size:1em;
+	display:grid;
+	grid-template-columns: 8.9%, 8.9%, 8.9%, 8.9%, 8.9%, 8.9%, 8.9%, 8.9%, 8.9%, 8.9%;
+	grid-templates-rows: 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%, 6.15%;
+  }
+  .t1 {
+	maxheight:6.15%;
+	  justify-self:center;
+	  align-self:center;
+	  font-size:1em;
+	  grid-column: 1 / 2;
+  }
+  .t2 {
+  	maxheight:6.15%;
+	  font-size:1em;
+  	  justify-self:center;
+	  align-self:center;
+
+	  grid-column: 2 / 3;
+  }
+  .t3 {
+  	maxheight:6.15%;
+	  font-size:1em;
+  	  justify-self:center;
+	  align-self:center;
+
+	  grid-column: 3 / 4;
+  }
+  .t4 {
+  	maxheight:6.15%;
+	  font-size:1em;
+  	  justify-self:center;
+	  align-self:center;
+
+	  grid-column: 4 / 5;
+  }
+  .t5 {
+  	maxheight:6.15%;
+	  font-size:1em;
+  	  justify-self:center;
+	  align-self:center;
+
+	  grid-column: 5 / 6;
+  }
+  .t6 {
+  	maxheight:6.15%;
+	  font-size:1em;
+  	  justify-self:center;
+	  align-self:center;
+
+	  grid-column: 6 / 7;
+  }
+  .t7 {
+  	maxheight:6.15%;
+	  font-size:1em;
+  	  justify-self:center;
+	  align-self:center;
+
+	  grid-column: 7 / 8;
+  }
+  .t8 {
+  	maxheight:6.15%;
+	  font-size:1em;
+  	  justify-self:center;
+	  align-self:center;
+
+	  grid-column: 8 / 9;
+  }
+  .t9 {
+  	maxheight:6.15%;
+	  font-size:1em;
+  	  justify-self:center;
+	  align-self:center;
+
+	  grid-column: 9 / 10;
+  }
+  .t10 {
+  	maxheight:6.15%;
+	font-size:1em;
+  	  justify-self:center;
+	  align-self:center;
+
+	  grid-column: 10 / 11;
+  }
+

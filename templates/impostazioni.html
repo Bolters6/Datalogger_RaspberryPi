@@ -1,0 +1,178 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>sin título</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.35" />
+</head>
+
+<body>
+	<body style="background-image: url(https://sfondo.info/i/original/9/7/f/16465.jpg);">
+	<img style="margin-top:1%; margin-left:1%;"" src="https://www.sie-engineering.it/personale/system/images/logo.png" height="8%" width="15%"/>
+	<div style="margin-top:1%; margin-left:1%">
+	<h1> IMPOSTAZIONI </h1>
+	<br>
+
+	<h2> Imposta Operatore </h2>
+	<input style = "height:40px; width:250px;" placeholder = "Operatore" type="text" value="" onChange="document.links.operatore.href='/operatore/'+this.value+'/1';">
+	<button style="height:43px; width:100px;"> <a style = "font-size:20px;" name="operatore" href="">Imposta</a>
+  </button>
+  <button style="height:43px; width:100px;"> <a style = "font-size:20px;" href="/operatore/operaio/0">Finish</a>
+  </button>
+  <h2 style ="color:orange">{{name}}{{operatore}}</h2>
+	{% if show == "1" %} 
+	<h2>Alimentatore 1:</h2>
+	{% if playone == "1" %}
+	<div><input style = "height:40px; width:250px;" type="text" value="" onChange="document.links.enlace.href='/play/'+this.value+'/1';">
+	  <button style="height:43px; width:60px;"> <a style = "font-size:20px;" name="enlace" href="">Play</a>
+  </button>
+  {% else %}
+   <button style="height:43px; width:60px;"> <a style = "font-size:20px;" href="/stop/alimentatore1/{{serial1}}">Stop</a>
+  </button> 
+  {% endif %}
+	  </div>
+	<h2 style="color:orange;"> {{alimentatore1}} </h2>
+	{% endif %}
+	{% if show == "1" %}
+  <h2>Alimentatore 2:</h2>
+  {% if playtwo == "1" %}
+	<div><input style = "height:40px; width:250px;" type="text" value="" onChange="document.links.enlace2.href='/play/'+this.value+'/2';">
+	 <button style="height:43px; width:60px;"> <a style = "font-size:20px;" name="enlace2" href="">Play</a>
+  </button>
+  {% else %}
+   <button style="height:43px; width:60px;"> <a style = "font-size:20px;" href="/stop/alimentatore2/{{serial2}}">Stop</a>
+  </button></div>
+  {% endif %}
+	<h2 style="color:orange;"> {{alimentatore2}} </h2>
+  {% endif %}
+  {% if show == "1" %}
+  <h2>Alimentatore 3:</h2>
+  {% if playthree == "1" %}
+	<div><input style = "height:40px; width:250px;" type="text" value="" onChange="document.links.enlace3.href='/play/'+this.value+'/3';">
+	  <button style="height:43px; width:60px;"> <a style = "font-size:20px;" name="enlace3" href="">Play</a>
+  </button>
+   {% else %}
+   <button style="height:43px; width:60px;"> <a style = "font-size:20px;" href="/stop/alimentatore3/{{serial3}}">Stop</a>
+  </button></div>
+  {% endif %}
+	<h2 style="color:orange;"> {{alimentatore3}} </h2>
+	{% endif %}
+	{% if show == "1" %}
+  <h2>Alimentatore 4:</h2>
+  {% if playfour == "1" %}
+	<div><input style = "height:40px; width:250px;" type="text" value="" onChange="document.links.enlace4.href='/play/'+this.value+'/4';">
+	  <button style="height:43px; width:60px;"> <a style = "font-size:20px;" name="enlace4" href="">Play</a>
+  </button>
+  {% else %}
+   <button style="height:43px; width:60px;"> <a style = "font-size:20px;" href="/stop/alimentatore4/{{serial4}}">Stop</a>
+  </button></div>
+  {% endif %}
+	<h2 style="color:orange;"> {{alimentatore4}} </h2>
+	{% endif %}
+	{% if show == "1" %}
+  <h2>Alimentatore 5:</h2>
+  {% if playfive == "1" %}
+	<div><input style = "height:40px; width:250px;" type="text" value="" onChange="document.links.enlace5.href='/play/'+this.value+'/5';">
+	  <button style="height:43px; width:60px;"> <a style = "font-size:20px;" name="enlace5" href="">Play</a>
+  </button>
+  {% else %}
+   <button style="height:43px; width:60px;"> <a style = "font-size:20px;" href="/stop/alimentatore5/{{serial5}}">Stop</a>
+  </button></div>
+  {% endif %}
+	<h2 style="color:orange;"> {{alimentatore5}} </h2>
+	{% endif %}
+	{% if show == "1" %}
+  <h2>Alimentatore 6:</h2>
+  {% if playsix == "1" %}
+	<div><input style = "height:40px; width:250px;" type="text" value="" onChange="document.links.enlace6.href='/play/'+this.value+'/6';">
+	  <button style="height:43px; width:60px;"> <a style = "font-size:20px;" name="enlace6" href="">Play</a>
+  </button>
+  {% else %}
+   <button style="height:43px; width:60px;"> <a style = "font-size:20px;" href="/stop/alimentatore6/{{serial6}}">Stop</a>
+  </button></div>
+  {% endif %}
+	<h2 style="color:orange;"> {{alimentatore6}} </h2>
+	{% endif %}
+	{% if show == "1" %}
+  <h2>Alimentatore 7:</h2>
+  {% if playseven == "1" %}
+	<div><input style = "height:40px; width:250px;" type="text" value="" onChange="document.links.enlace7.href='/play/'+this.value+'/7';">
+	  <button style="height:43px; width:60px;"> <a style = "font-size:20px;" name="enlace7" href="">Play</a>
+  </button>
+  {% else %}
+   <button style="height:43px; width:60px;"> <a style = "font-size:20px;" href="/stop/alimentatore7/{{serial7}}">Stop</a>
+  </button></div>
+  {% endif %}
+	<h2 style="color:orange;"> {{alimentatore7}} </h2>
+	{% endif %}
+	{% if show == "1" %}
+  <h2>Alimentatore 8:</h2>
+  {% if playeight == "1" %}
+	<div><input style = "height:40px; width:250px;" type="text" value="" onChange="document.links.enlace8.href='/play/'+this.value+'/8';">
+	  <button style="height:43px; width:60px;"> <a style = "font-size:20px;" name="enlace8" href="">Play</a>
+  </button>
+  {% else %}
+   <button style="height:43px; width:60px;"> <a style = "font-size:20px;" href="/stop/alimentatore8/{{serial8}}">Stop</a>
+  </button></div>
+  {% endif %}
+	<h2 style="color:orange;"> {{alimentatore8}} </h2>
+  {% endif %}
+  {% if show == "1" %}
+  <h2>Alimentatore 9:</h2>
+  {% if playnine == "1" %}
+	<div></div><input style = "height:40px; width:250px;" type="text" value="" onChange="document.links.enlace9.href='/play/'+this.value+'/9';">
+	  <button style="height:43px; width:60px;"> <a style = "font-size:20px;" name="enlace9" href="">Play</a>
+  </button>
+  {% else %}
+   <button style="height:43px; width:60px;"> <a style = "font-size:20px;" href="/stop/alimentatore9/{{serial9}}">Stop</a>
+  </button></div>
+  {% endif %}
+	<h2 style="color:orange;"> {{alimentatore9}} </h2>
+  {% endif %}
+  {% if show == "1" %}
+  <h2>Alimentatore 10:</h2>
+  {% if playten == "1" %}
+	<div><input style = "height:40px; width:250px;" type="text" value="" onChange="document.links.enlace10.href='/play/'+this.value+'/10';">
+	  <button style="height:43px; width:60px;"> <a style = "font-size:20px;" name="enlace10" href="">Play</a>
+  </button>
+  {% else %}
+   <button style="height:43px; width:60px;"> <a style = "font-size:20px;" href="/stop/alimentatore10/{{serial10}}">Stop</a>
+  </button></div>
+  {% endif %}
+	<h2 style="color:orange;"> {{alimentatore10}} </h2>
+  {% endif %}
+  {%if show == "1" %}
+  <h2>Alimentatore 11:</h2>
+  {% if playeleven == "1" %}
+	<div><input style = "height:40px; width:250px;" type="text" value="" onChange="document.links.enlace11.href='/play/'+this.value+'/11';">
+	  <button style="height:43px; width:60px;"> <a style = "font-size:20px;" name="enlace11" href="">Play</a>
+  </button>
+  {% else %}
+   <button style="height:43px; width:60px;"> <a style = "font-size:20px;" href="/stop/alimentatore11/{{serial11}}">Stop</a>
+  </button></div>
+  {% endif %}
+	<h2 style="color:orange;"> {{alimentatore11}} </h2>
+  {% endif %}
+  {% if show == "1" %}
+  <h2>Alimentatore 12:</h2>
+  {% if playtwelve == "1" %}
+	<div><input style = "height:40px; width:250px;" type="text" value="" onChange="document.links.enlace12.href='/play/'+this.value+'/12';">
+	 <button style="height:43px; width:60px;"> <a style = "font-size:20px;" name="enlace12" href="">Play</a>
+  </button>
+  {% else %}
+   <button style="height:43px; width:60px;"> <a style = "font-size:20px;" href="/stop/alimentatore12/{{serial12}}">Stop</a>
+  </button></div>
+  {% endif %}
+	<h2 style="color:orange"> {{alimentatore12}} </h2>
+ {% endif %}
+  <button style="height:43px; width:100px;"><a style="font-size:20px;" href="/">Index</a></button>
+<button style="height:43px; width:100px; font-size:1em;">
+	 <a href="/finalreport"> Report </a> 
+	 </button>	
+</div>	
+</body>
+
+</html>
